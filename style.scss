@@ -1,5 +1,3 @@
-/* Reset */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -13,41 +11,106 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
-}
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-    display: block;
-}
+  display: block; }
+
 html {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
+
 *, *:before, *:after {
-  box-sizing: inherit;
-}
-
-
+  box-sizing: inherit; }
 
 /* Custom Styles */
-
-
 html {
-    font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 body {
-    font-size: 1.5rem;
-    line-height: 1.6;
-    font-family: 'Indie Flower', cursive;
-}
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-family: 'Indie Flower', cursive; }
 
 p {
-    display: block;
-    margin-bottom: 15px;
+  display: block;
+  margin-bottom: 15px; }
+
+$color-box-bg: tomato;
+$color-p-txet: #FFFFFF;
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    justify-items: stretch;
+    grid-gap: 5px;  
+
 }
+
+.box {
+        background-color: $color-box-bg;
+        display: flex;
+        flex-direction: column; 
+        img {
+            float: letf;
+        }
+
+        p {
+            float: right;
+            direction: rtl;
+            font-size: 25px;
+            line-height: 26px;
+            color: $color-p-txet;
+            margin: 2%;
+            text-align: right;
+            white-space: pre-line;
+        }
+
+
+}
+
+
+@media only screen and (min-width: 320px)   {
+    .grid {
+        grid-template-columns: 1fr;
+
+    }
+}
+@media only screen and (min-width: 480px)   {
+    .grid {
+        grid-template-columns: 1fr;
+
+    }
+}
+@media only screen and (min-width: 600px)   {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+@media only screen and (min-width: 768px)   {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+}
+@media only screen and (min-width: 980px)   {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+}
+@media only screen and (min-width: 1380px)  {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    }   
+}
+
 
