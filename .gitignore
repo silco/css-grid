@@ -2,5 +2,7 @@
 /node_modules
 /backup
 .htaccess
+.sass-cache
+.gitignore
 git.md
 sass.md
