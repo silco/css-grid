@@ -1,0 +1,6 @@
+/vendor
+/node_modules
+/backup
+.htaccess
+git.md
+sass.md
