@@ -1,7 +1,7 @@
 /vendor
 /node_modules
 /backup
-/.sass-cache
+.sass-cache
 .htaccess
 git.md
 sass.md
