@@ -1,6 +1,9 @@
 /vendor
 /node_modules
 /backup
+/css
+/sass
+index.html
 .htaccess
 .sass-cache
 .gitignore
